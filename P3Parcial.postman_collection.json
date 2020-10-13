@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "17bdea5d-e988-44e0-ab98-792d6abd4186",
+		"name": "P3Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/primerParcial/index.php/registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@email.com",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"registro"
+					]
+				},
+				"description": "Punto 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/stats?tipo=50000km",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJhZG1pbkBlbWFpbC5jb20iLCJhZG1pbiJd.I0bVjY-BG84SSGJLulF1PH908gmWzW3cKyG26BcCL1c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/stats?tipo=50000km",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "50000km"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"login"
+					]
+				},
+				"description": "Punto 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/vehiculo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJ1c2VyQGVtYWlsLmNvbSIsInVzZXIiXQ.iEJ8kGKEkXanD5cZTCrKpbKfBUVBBABITSUdGHMXV3s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "marca",
+							"value": "fiat",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "patente",
+							"value": "aaa112",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/vehiculo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"vehiculo"
+					]
+				},
+				"description": "Punto 3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/patente/AAA111",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJ1c2VyQGVtYWlsLmNvbSIsInVzZXIiXQ.iEJ8kGKEkXanD5cZTCrKpbKfBUVBBABITSUdGHMXV3s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/patente/AAA111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"patente",
+						"AAA111"
+					]
+				},
+				"description": "Punto 4"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/servicio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJ1c2VyQGVtYWlsLmNvbSIsInVzZXIiXQ.iEJ8kGKEkXanD5cZTCrKpbKfBUVBBABITSUdGHMXV3s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "50000km",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "demora",
+							"value": "12hs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"servicio"
+					]
+				},
+				"description": "Punto 5"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/turno?patente=aaa112&fecha=12&id=1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJ1c2VyQGVtYWlsLmNvbSIsInVzZXIiXQ.iEJ8kGKEkXanD5cZTCrKpbKfBUVBBABITSUdGHMXV3s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/turno?patente=aaa112&fecha=12&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"turno"
+					],
+					"query": [
+						{
+							"key": "patente",
+							"value": "aaa112"
+						},
+						{
+							"key": "fecha",
+							"value": "12"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Punto 6"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/primerParcial/index.php/stats?tipo=50000km",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.WyJhZG1pbkBlbWFpbC5jb20iLCJhZG1pbiJd.I0bVjY-BG84SSGJLulF1PH908gmWzW3cKyG26BcCL1c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/primerParcial/index.php/stats?tipo=50000km",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"primerParcial",
+						"index.php",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "50000km"
+						}
+					]
+				},
+				"description": "Punto 7"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
